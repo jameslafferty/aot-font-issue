@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'my-icons';
+  src: url('~my-icons/fonts/my-icons.woff') format('woff'),
+    url('~my-icons/fonts/my-icons.eot') format('eot'),
+    url('~my-icons/fonts/my-icons.ttf') format('ttf'),
+    url('~my-icons/fonts/my-icons.svg') format('svg');
+}
+
+$-icons: (
+  home-1: "\e900",
+  home-2: "\e901",
+  home-3: "\e902"
+);
+
+@mixin icon-classes($include-icons: map-keys($-icons)) {
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'my-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @each $icon-name in $include-icons {
+    @if map-has-key($-icons, $icon-name) {
+      .icon-#{$icon-name} {
+        &:before {
+          content: map-get($-icons, $icon-name);
+        }
+      }
+    }
+  }
+}
