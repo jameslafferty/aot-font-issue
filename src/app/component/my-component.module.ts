@@ -14,4 +14,7 @@ import { MyComponentComponent } from './my-component.component';
         CommonModule,
     ],
 })
-export class MyComponentModule {}
+export class MyComponentModule {};
+export {
+    MyComponentComponent,
+};

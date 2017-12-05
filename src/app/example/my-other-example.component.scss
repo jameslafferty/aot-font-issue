@@ -1,0 +1,4 @@
+@import '~@my/icons/icons';
+p {
+    @include icon-classes;
+}

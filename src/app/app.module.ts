@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MyComponentModule } from './my-example/my-component.module';
+import { MyExampleModule } from './example/my-example.module';
 
 
 @NgModule({
@@ -11,7 +12,10 @@ import { MyComponentModule } from './my-example/my-component.module';
   ],
   imports: [
     BrowserModule,
-    MyComponentModule,
+    MyExampleModule,
+    RouterModule.forRoot([], {
+      useHash: true,
+    }),
     
   ],
   providers: [],

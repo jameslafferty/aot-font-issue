@@ -4,15 +4,16 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "es2015",
-    "types": []
+    "types": [],
+    "paths": {
+      "@my/*": [
+        "../node_modules/@my/*",
+        "./app/*"
+      ]
+    }
   },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ],
-  "paths": {
-    "my-icons/*": [
-      "../node_modules/my-icons/*"
-    ]
-  }
+  ]
 }

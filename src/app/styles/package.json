@@ -1,0 +1,12 @@
+{
+    "name": "@my/styles",
+    "version": "1.0.0",
+    "author": "jameslafferty",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@my/icons": "^1.0.0"
+    }
+}
+
+  

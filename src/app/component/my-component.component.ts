@@ -5,12 +5,7 @@ import { Component } from '@angular/core';
     styleUrls: [
         'my-component.component.scss',
     ],
-    template: `
-        <span class="icon-home-1"></span>
-        <span class="icon-home-2"></span>
-        <span class="icon-home-3"></span>
-    `
+    templateUrl: 'my-component.component.html',
 })
 export class MyComponentComponent {
-
 }

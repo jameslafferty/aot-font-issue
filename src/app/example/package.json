@@ -1,0 +1,14 @@
+{
+    "name": "@my/example",
+    "version": "1.0.0",
+    "author": "jameslafferty",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@my/styles": "^1.0.0",
+        "@my/component": "^1.0.0",
+        "@my/icons": "^1.0.0"
+    }
+}
+
+  

@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "postinstall": "lerna bootstrap",
-    "start": "ng serve",
+    "start": "ng serve --aot",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -13,7 +13,8 @@
   },
   "private": true,
   "dependencies": {
-    "my-icons": "file://./src/app/my-icons",
+    "@my/icons": "file://./src/app/icons",
+    "@my/styles": "file://./src/app/styles",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",

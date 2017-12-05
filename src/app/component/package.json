@@ -1,11 +1,11 @@
 {
-    "name": "my-example",
+    "name": "@my/component",
     "version": "1.0.0",
     "author": "jameslafferty",
     "license": "UNLICENSED",
-    "private": true,
+    "main": "index.ts",
     "dependencies": {
-        "my-icons": "^1.0.0"
+        "@my/styles": "^1.0.0"
     }
 }
 

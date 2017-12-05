@@ -1,12 +1,9 @@
 {
-    "name": "my-icons",
+    "name": "@my/icons",
     "version": "1.0.0",
     "author": "jameslafferty",
     "license": "UNLICENSED",
     "main": "index.ts",
-    "publishConfig": {
-      "registry": "https://adaptiveinsights.jfrog.io/adaptiveinsights/api/npm/npm-adaptive/"
-    },
     "files": [
       "icons.scss",
       "fonts/**"
